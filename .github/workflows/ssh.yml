@@ -1,0 +1,10 @@
+name: SSH Test Server
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh-session:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup SSH (tmate)
+        uses: mxschmitt/action-tmate@v3
